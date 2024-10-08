@@ -1,0 +1,90 @@
+﻿<Window x:Class="A2._1._5_FormatoTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A2._1._5_FormatoTexto"
+        mc:Ignorable="d"
+        Title="FormateoTexto" Height="450" Width="800">
+    <Grid Background="#FF509DE4">
+        
+        <TextBlock 
+            HorizontalAlignment="Left"
+            Margin="73,88,0,0" 
+            TextWrapping="Wrap"
+            Text="Texto" 
+            VerticalAlignment="Top" 
+            FontSize="18" FontWeight="Bold"/>
+
+        <TextBox 
+            x:Name="textBoxPalabras"
+            HorizontalAlignment="Left" 
+            Margin="73,114,0,0" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"
+            Width="211" 
+            Height="130" TextChanged="textBoxPalabras_TextChanged"/>
+
+        <TextBlock
+            x:Name="textBlockYellow"
+            HorizontalAlignment="Left"
+            Margin="73,292,0,0"
+            TextWrapping="Wrap"
+            VerticalAlignment="Top"
+            Height="33"
+            Width="651"
+            TextAlignment="Center" FontSize="20"
+            Background="#FFF1F17B"/>
+
+
+        <RadioButton x:Name="Negrita" 
+                     Content="Negrita"
+                     HorizontalAlignment="Center" 
+                     Margin="0,148,0,0" 
+                     VerticalAlignment="Top" 
+                     FontWeight="Bold"
+                     FontSize="14"
+                     GroupName="negrita"
+                     Checked="Negrita_Click"/>
+
+        <RadioButton x:Name="Cursiva" 
+                     Content="Cursiva"
+                     HorizontalAlignment="Left" 
+                     Margin="470,148,0,0" 
+                     VerticalAlignment="Top"
+                     FontSize="14"
+                     FontStyle="Italic"
+                     GroupName="cursiva"
+                     Checked="Cursiva_Click"/>
+
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="568,148,0,0" 
+                   TextWrapping="Wrap"
+                   Text="Color del texto"
+                   VerticalAlignment="Top"
+                   FontSize="14"/>
+
+        <RadioButton x:Name="buttonAzul" 
+                     Content="Azul" 
+                     HorizontalAlignment="Left"
+                     Margin="673,114,0,0" 
+                     VerticalAlignment="Top"
+                     GroupName="color"
+                     Checked="buttonAzul_Checked"/>
+
+        <RadioButton x:Name="buttonRojo" 
+                     Content="Rojo" 
+                     HorizontalAlignment="Left"
+                     Margin="672,145,0,0" 
+                     GroupName="color"
+                     VerticalAlignment="Top" Checked="buttonRojo_Checked"/>
+
+        <RadioButton x:Name="buttonVerde" 
+                     Content="Verde" 
+                     HorizontalAlignment="Left"
+                     Margin="673,174,0,0" 
+                     GroupName="color"
+                     VerticalAlignment="Top" 
+                     Checked="buttonVerde_Checked"/>
+    </Grid>
+</Window>

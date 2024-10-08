@@ -1,0 +1,36 @@
+﻿<Window x:Class="A2._1._7_TamanyoTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A2._1._7_TamanyoTexto"
+        mc:Ignorable="d"
+        Title="TamañoTexto" Height="450" Width="800">
+    
+    <Grid>
+        <TextBlock
+            x:Name="texto"
+                   HorizontalAlignment="Center" 
+                   Margin="0,102,0,0"
+                   TextWrapping="NoWrap" 
+                   Text="Desarrollo de Interfaces" 
+                   VerticalAlignment="Top" 
+                   FontSize="48" 
+                   Width="780" FontWeight="Bold"
+                   TextAlignment="Center" Foreground="#FF2F78ED">
+            <TextBlock.Effect>
+                <DropShadowEffect
+                              ShadowDepth="4"
+                              Direction="330"
+                              Color="Black"
+                              Opacity="0.8"
+                              BlurRadius="4"/>
+            </TextBlock.Effect>
+        </TextBlock> 
+        <RadioButton x:Name="buttonPequeño" Content="Pequeño" HorizontalAlignment="Left" Margin="60,286,0,0" VerticalAlignment="Top" FontSize="36" Checked="buttonPequeño_Checked"/>
+        <RadioButton x:Name="buttonMediano" Content="Mediano" HorizontalAlignment="Center" Margin="0,286,0,0" VerticalAlignment="Top" FontSize="36" Checked="buttonMediano_Checked"/>
+        <RadioButton x:Name="buttonGrande" Content="Grande" HorizontalAlignment="Left" Margin="585,286,0,0" VerticalAlignment="Top" FontSize="36" Checked="buttonGrande_Checked"/>
+
+
+    </Grid>
+</Window>
